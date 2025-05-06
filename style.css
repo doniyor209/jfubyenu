@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+:root {
+    --oq: white;
+    --qora: black;
+    --header: #2B3844;
+    --bg: #202C36;
+}
+
+.dark {
+    --oq: black;
+    --qora: white;
+    --header: rgb(187, 185, 185);
+    --bg: gray;
+}
+
+header {
+    padding: 25px 0;
+    background-color: var(--header);
+    box-shadow: 0px 2px 4px 0px #0000000E;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    color: var(--oq);
+}
+
+.btn {
+    background-color: var(--header);
+    border: none;
+    color: var(--oq);
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+
+.hero {
+    padding: 80px 0;
+}
+
+input {
+    background-color: var(--header);
+    width: 480px;
+    height: 56px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: var(--oq);
+    font-size: 18px;
+    border-radius: 8px;
+
+}
+
+#select {
+    background-color: var(--header);
+    width: 480px;
+    height: 56px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: var(--oq);
+    font-size: 18px;
+    border-radius: 8px;
+
+}
+
+.card {
+    width: 264px;
+    height: 250px;
+    background-color: var(--header);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: var(--oq);
+    margin-top: 30px;
+}
+
+.ota {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#back {
+    width: 125px;
+    height: 45px;
+    gap: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--oq);
+    transition: 1s;
+}
+
+#back:hover {
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+#ota2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+#ota2 img {
+    width: 350px;
+}
+
+.info h3{
+    text-align: left;
+}
+
+@media(max-width:834px) {
+    header {
+        padding: 25px;
+    }
+
+    input {
+        margin-left: 30px;
+        width: 90%;
+        height: 90px;
+    }
+    #ota2{
+        flex-direction: column;
+    }
+    #ota2 img{
+        width: 90%;
+    }
+}
+
+@media(max-width:450px) {
+    input {
+        height: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .ota {
+        justify-content: center;
+    }
+}
